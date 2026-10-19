@@ -764,7 +764,7 @@ $setupPanel=New-SectionPanel 'Смена и стекло';$setupPanel.Margin=New
 $setup=New-Object Windows.Forms.TableLayoutPanel;$setup.Dock='Fill';$setup.ColumnCount=1;$setup.RowCount=7;$setup.Margin=New-Object Windows.Forms.Padding(0);foreach($h in @(22,36,18,25,25,25,44)){[void]$setup.RowStyles.Add((New-Object Windows.Forms.RowStyle([Windows.Forms.SizeType]::Absolute,$h)))}
 $stationBox=New-Combo @('A01','B02');$stationBox.Text='A01';$stationBox.TabStop=$false
 $operatorCaption=New-Label 'ОПЕРАТОР';$operatorCaption.ForeColor=[Drawing.Color]::FromArgb(104,104,104);$operatorCaption.Font=New-Object Drawing.Font('Segoe UI Semibold',8)
-$operatorBox=New-Combo @('Найдин П.','Родион Ч.','Сергей Ф.');$operatorBox.Text='Найдин П.'
+$operatorBox=New-Combo @('Оператор 1','Оператор 2','Оператор 3');$operatorBox.Text='Оператор 1'
 $activeCaption=New-Label 'АКТИВНОЕ СТЕКЛО';$activeCaption.ForeColor=[Drawing.Color]::FromArgb(104,104,104);$activeCaption.Font=New-Object Drawing.Font('Segoe UI Semibold',8)
 $activeGlassValue=New-Label 'Не установлено';$activeGlassValue.Font=New-Object Drawing.Font('Segoe UI Semibold',11)
 $activeGlassInstalled=New-Label 'Установлено: —';$activeGlassInstalled.ForeColor=[Drawing.Color]::FromArgb(90,90,90)
