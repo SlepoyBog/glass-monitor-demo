@@ -1,0 +1,24 @@
+# Runtime and production data
+data/
+exports/
+reports/
+backups/
+*.log
+*.csv
+*.xlsx
+*.json
+
+# Synthetic portfolio fixtures are intentionally versioned
+!demo/reference/*.csv
+
+# Temporary artifacts
+artifacts/
+temp/
+tmp/
+*.tmp
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
